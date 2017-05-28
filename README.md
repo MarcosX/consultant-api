@@ -1,24 +1,15 @@
-# README
+# Local setup
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```
+rails db:migrate
+rails db:seed
+rails server
+```
 
-Things you may want to cover:
+Point to [localhost:3000/graphiql](http://localhost:3000/graphiql) to access the GraphiQL query interface
 
-* Ruby version
+## TODO
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- How to split types in different files
+- Add more types (office, projects)
+- Add more relationships (consultants and old projects, office and projects)
