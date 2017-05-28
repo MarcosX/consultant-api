@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: 
+  home_office: 
+  working_office: 
+  staffing_office: 
+  current_project: 
+
+two:
+  name: 
+  home_office: 
+  working_office: 
+  staffing_office: 
+  current_project: 
