@@ -15,7 +15,6 @@ curl http://localhost:3000/graphql -XPOST -H 'content-type: application/json'  -
 
 ## TODO
 
-- How to split types in different files
 - Add more types (office, projects)
 - Add more relationships (consultants and old projects, office and projects)
 

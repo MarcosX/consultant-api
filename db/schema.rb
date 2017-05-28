@@ -14,7 +14,6 @@ ActiveRecord::Schema.define(version: 20170528122945) do
 
   create_table "consultants", force: :cascade do |t|
     t.string "name"
-    t.integer "assignment_id"
     t.integer "home_office_id"
     t.integer "staffing_office_id"
     t.integer "working_office_id"
@@ -31,10 +30,8 @@ ActiveRecord::Schema.define(version: 20170528122945) do
 
   create_table "projects", force: :cascade do |t|
     t.string "name"
-    t.integer "assignment_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["assignment_id"], name: "index_projects_on_assignment_id"
   end
 
 end
