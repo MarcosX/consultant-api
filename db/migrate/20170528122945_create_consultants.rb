@@ -1,7 +1,7 @@
 class CreateConsultants < ActiveRecord::Migration[5.1]
   def change
     create_table :consultants do |t|
-      t.string :name
+      t.string :name, uniqueness: true
       t.integer :home_office_id
       t.integer :staffing_office_id
       t.integer :working_office_id

@@ -27,4 +27,10 @@ Types::ConsultantType = GraphQL::ObjectType.define do
       consultant.current_project
     end
   end
+  field :projects do
+    type types[Types::ProjectType]
+    resolve -> (consultant, args, ctx) do
+      consultant.projects
+    end
+  end
 end
