@@ -22,9 +22,9 @@ Types::ConsultantType = GraphQL::ObjectType.define do
     end
   end
   field :current_project do
-    type types.String
+    type Types::ProjectType
     resolve -> (consultant, args, ctx) do
-      "#{consultant.current_project.name}"
+      consultant.current_project
     end
   end
 end
