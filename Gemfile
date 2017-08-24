@@ -30,7 +30,8 @@ gem 'coffee-rails'
 # gem 'rack-cors'
 # GraphQL
 gem 'graphql'
-gem "graphiql-rails"
+gem 'graphiql-rails'
+gem 'therubyracer'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
